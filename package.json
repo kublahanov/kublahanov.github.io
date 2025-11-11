@@ -15,7 +15,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "serve": "npx serve -s ."
+    "serve": "npx serve -s .",
+    "build:css": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
