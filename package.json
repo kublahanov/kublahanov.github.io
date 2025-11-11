@@ -17,7 +17,7 @@
   "scripts": {
     "serve": "npx serve -s .",
     "build:css": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --minify",
-    "watch:css": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch"
+    "watch:css": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch --minify"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
