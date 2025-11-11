@@ -1,0 +1,24 @@
+{
+  "name": "kublahanov.github.io",
+  "version": "1.0.0",
+  "description": "О себе и своих разработках",
+  "homepage": "https://github.com/kublahanov/kublahanov.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/kublahanov/kublahanov.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kublahanov/kublahanov.github.io.git"
+  },
+  "license": "MIT",
+  "author": "Roman Kondrashov <nr.kondrashov@gmail.com>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx serve -s ."
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}
