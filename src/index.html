@@ -7,18 +7,9 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Tailwind CSS -->
-  <link href="/src/assets/css/output.css" rel="stylesheet">
+  <link href="assets/css/output.css" rel="stylesheet">
 </head>
-<body class="min-h-screen bg-gray-900 text-white overflow-x-hidden">
-<!-- Анимированный фон -->
-<div class="fixed inset-0 overflow-hidden pointer-events-none gradient-bg">
-  <div class="floating-bg absolute -top-48 -right-48 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-  <div class="floating-bg absolute -bottom-48 -left-48 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"
-       style="animation-delay: -5s;"></div>
-  <div class="floating-bg absolute top-1/2 left-1/2 w-96 h-96 bg-green-500/10 rounded-full blur-3xl"
-       style="animation-delay: -10s;"></div>
-</div>
-
+<body class="min-h-screen overflow-x-hidden">
 <!-- Основной контент -->
 <div class="relative z-10 min-h-screen flex items-center justify-center px-4 py-8">
   <div class="max-w-4xl w-full">
@@ -27,16 +18,21 @@
       <!-- Аватар и основная информация -->
       <div class="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
         <div class="flex-shrink-0">
-          <div
-            class="w-32 h-32 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center shadow-lg">
-            <i class="fas fa-code text-4xl text-white"></i>
-          </div>
+        <!--<div-->
+        <!--  class="w-32 h-32 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center shadow-lg">-->
+        <!--  <i class="fas fa-code text-4xl text-white"></i>-->
+        <!--</div>-->
+          <img
+            class="h-35 w-35 rounded-full ring-2 ring-white/20"
+            src="assets/images/philosoraptor_template_001.jpg"
+            alt="@kublahanov"
+          />
         </div>
 
         <div class="text-center md:text-left flex-1">
           <h1
             class="text-4xl md:text-5xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-            Roman Kublahanov
+            @kublahanov
           </h1>
           <p class="text-xl text-gray-300 mb-4">Fullstack Developer</p>
           <p class="text-gray-400 max-w-2xl">
