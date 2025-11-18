@@ -1,9 +1,7 @@
 @import "tailwindcss";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  font-family: 'Pacifico', cursive;
-  font-size: 1.2rem;
-  background-color: transparent;
   background-image: url('./../images/background.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;

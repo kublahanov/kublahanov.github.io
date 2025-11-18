@@ -19,9 +19,11 @@
     "serve:docs": "npx serve -s ./docs",
     "build:css": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --minify",
     "watch:css": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch --minify",
-    "update:docs": "rm -rf docs && cp -r src docs"
+    "update:docs": "rm -rf docs && cp -r src docs",
+    "copy:fonts": "cp -r node_modules/@fortawesome/fontawesome-free/webfonts src/assets/"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0",
     "@tailwindcss/cli": "^4.1.17",
     "tailwindcss": "^4.1.17"
   }
