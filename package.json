@@ -15,9 +15,11 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "serve": "npx serve -s ./src",
+    "serve:src": "npx serve -s ./src",
+    "serve:docs": "npx serve -s ./docs",
     "build:css": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --minify",
-    "watch:css": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch --minify"
+    "watch:css": "npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --watch --minify",
+    "update:docs": "rm -rf docs && cp -r src docs"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
