@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@kublahanov - Fullstack Developer</title>
+  <title>@kublahanov - О себе и своих разработках</title>
   <link href="assets/css/output.css" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
 </head>
 <body class="min-h-screen overflow-x-hidden font-sans">
 <!-- Основной контент -->
 <div class="relative z-10 min-h-screen flex items-center justify-center px-4 py-8">
   <div class="max-w-4xl w-full">
     <!-- Карточка профиля -->
-    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 md:p-12 shadow-2xl border border-white/20">
+    <div class="bg-white/30 backdrop-blur-sm rounded-2xl px-8 pt-8 pb-6 md:p-12 md:pt-12 md:pb-10 shadow-2xl border border-white/20">
       <!-- Аватар и основная информация -->
       <div class="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
         <div class="flex-shrink-0">
@@ -21,47 +22,43 @@
             alt="@kublahanov"
           />
         </div>
-
         <div class="text-center md:text-left flex-1">
           <h1
-            class="text-4xl md:text-5xl font-bold mb-3 bg-clip-text">
+            class="text-4xl md:text-5xl font-bold mb-3 bg-clip-text text-shadow-md">
             @kublahanov
           </h1>
-          <p class="text-xl mb-4">Fullstack Developer</p>
+          <p class="text-xl text-shadow-sm mb-1">Fullstack Developer</p>
           <p class="max-w-2xl">
             Разрабатываю веб-приложения с использованием современных технологий.
-            Люблю создавать красивые и функциональные интерфейсы.
+            Изобретаю будущее.
           </p>
         </div>
       </div>
 
       <!-- Контакты -->
       <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
-        <a href="https://github.com/kublahanov"
-           class="flex items-center px-4 py-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700">
+        <a href="https://github.com/kublahanov" target="_blank"
+          class="flex items-center px-6 py-3 bg-blue-700/50 hover:bg-blue-700/40 text-blue-100 rounded-lg border border-blue-700 transition-colors">
           <i class="fab fa-github mr-2"></i>
           GitHub
         </a>
-        <a href="mailto:your-email@example.com"
-           class="flex items-center px-4 py-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700">
-          <i class="fas fa-envelope mr-2"></i>
-          Email
-        </a>
-        <a href="#"
-           class="flex items-center px-4 py-2 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700">
+        <a href="https://career.habr.com/kublahanov" target="_blank"
+           class="flex items-center px-6 py-3 bg-green-700/50 hover:bg-green-700/40 text-green-100 rounded-lg border border-green-700 transition-colors">
           <i class="fas fa-file-alt mr-2"></i>
           Резюме
         </a>
+        <a href="mailto:your-email@example.com" target="_blank"
+          class="flex items-center px-6 py-3 bg-cyan-700/50 hover:bg-cyan-700/40 text-cyan-100 rounded-lg border border-cyan-700 transition-colors">
+          <i class="fas fa-envelope mr-2"></i>
+          Email
+        </a>
       </div>
 
-      <!-- Разделитель -->
-      <div class="border-t border-gray-700/50 my-8"></div>
-
       <!-- Проекты -->
-      <div class="mb-8">
-        <h2 class="text-2xl font-bold mb-6 text-center md:text-left">
-          <i class="fas fa-rocket mr-2 text-purple-400"></i>
-          Мои проекты
+      <div class="border-t border-white/30 py-8">
+        <h2 class="text-2xl text-shadow-sm mb-6 text-center md:text-left">
+          <i class="fas fa-rocket mr-2 text-red-800"></i>
+          Проекты
         </h2>
 
         <div class="grid md:grid-cols-2 gap-6">
@@ -163,31 +160,32 @@
         </div>
       </div>
 
-      <!-- Навыки -->
-      <div class="border-t border-gray-700/50 pt-8">
-        <h2 class="text-2xl font-bold mb-6 text-center md:text-left">
-          <i class="fas fa-cogs mr-2 text-blue-400"></i>
+      <!-- Технологии -->
+      <div class="border-t border-white/30 py-8">
+        <h2 class="text-2xl text-shadow-sm mb-6 text-center md:text-left">
+          <i class="fas fa-cogs mr-2 text-amber-800"></i>
           Технологии
         </h2>
 
         <div class="flex flex-wrap justify-center gap-3">
-          <span
-            class="px-3 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30">PHP/Laravel</span>
-          <span class="px-3 py-2 bg-blue-500/20 text-blue-300 rounded-lg border border-blue-500/30">JavaScript/TypeScript</span>
-          <span class="px-3 py-2 bg-cyan-500/20 text-cyan-300 rounded-lg border border-cyan-500/30">React/Vue.js</span>
+          <span class="px-3 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30">PHP / Laravel</span>
+          <span class="px-3 py-2 bg-blue-500/20 text-blue-300 rounded-lg border border-blue-500/30">JavaScript / TypeScript</span>
+          <span class="px-3 py-2 bg-cyan-500/20 text-cyan-300 rounded-lg border border-cyan-500/30">Vue.js / React</span>
           <span class="px-3 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">Node.js</span>
-          <span class="px-3 py-2 bg-red-500/20 text-red-300 rounded-lg border border-red-500/30">PostgreSQL/MySQL</span>
+          <span class="px-3 py-2 bg-red-500/20 text-red-300 rounded-lg border border-red-500/30">PostgreSQL / MySQL</span>
           <span class="px-3 py-2 bg-orange-500/20 text-orange-300 rounded-lg border border-orange-500/30">Docker</span>
           <span class="px-3 py-2 bg-gray-500/20 text-gray-300 rounded-lg border border-gray-500/30">Git</span>
         </div>
       </div>
-    </div>
 
-    <!-- Футер -->
-    <div class="text-center mt-8 text-white">
-      <p class="text-shadow-lg text-shadow-gray-700">
-        &copy; 2024 @kublahanov. Сделано с ❤️ и Tailwind CSS
-      </p>
+      <!-- Футер -->
+      <footer class="text-center mt-8 text-black/80 text-md border-t border-white/30 pt-8">
+        <p class="text-shadow-md/20 text-shadow-white">
+          &copy; From
+          <a class="underline hover:no-underline" href="https://github.com/kublahanov">kublahanov</a>
+          with ❤️!
+        </p>
+      </footer>
     </div>
   </div>
 </div>
