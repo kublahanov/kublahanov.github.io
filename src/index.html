@@ -12,7 +12,17 @@
 <div class="relative z-10 min-h-screen flex items-center justify-center px-4 py-8">
   <div class="max-w-4xl w-full">
     <!-- Карточка профиля -->
-    <div class="bg-white/30 backdrop-blur-sm rounded-2xl px-8 pt-8 pb-6 md:p-12 md:pt-12 md:pb-10 shadow-2xl border border-white/20">
+    <div class="
+      bg-white/30
+        bg-gradient-to-b from-white/5 via-white/30 to-white/80
+        backdrop-blur-sm
+        px-8 pt-8 pb-6
+        md:p-12 md:pt-12 md:pb-10
+        rounded-2xl
+        shadow-2xl
+        border
+      border-white/80
+    ">
       <!-- Аватар и основная информация -->
       <div class="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
         <div class="flex-shrink-0">
@@ -38,17 +48,17 @@
       <!-- Контакты -->
       <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
         <a href="https://github.com/kublahanov" target="_blank"
-          class="flex items-center px-6 py-3 bg-blue-700/50 hover:bg-blue-700/40 text-blue-100 rounded-lg border border-blue-700 transition-colors">
+          class="btn-social bg-blue-700/50 hover:bg-blue-700/40 text-blue-100 border-blue-700 hover:border-white">
           <i class="fab fa-github mr-2"></i>
           GitHub
         </a>
         <a href="https://career.habr.com/kublahanov" target="_blank"
-           class="flex items-center px-6 py-3 bg-green-700/50 hover:bg-green-700/40 text-green-100 rounded-lg border border-green-700 transition-colors">
+           class="btn-social bg-green-700/50 hover:bg-green-700/40 text-green-100 border-green-700 hover:border-white">
           <i class="fas fa-file-alt mr-2"></i>
           Резюме
         </a>
         <a href="mailto:your-email@example.com" target="_blank"
-          class="flex items-center px-6 py-3 bg-cyan-700/50 hover:bg-cyan-700/40 text-cyan-100 rounded-lg border border-cyan-700 transition-colors">
+          class="btn-social bg-cyan-700/50 hover:bg-cyan-700/40 text-cyan-100 border-cyan-700 hover:border-white">
           <i class="fas fa-envelope mr-2"></i>
           Email
         </a>
@@ -64,25 +74,25 @@
         <div class="grid md:grid-cols-2 gap-6">
           <!-- Проект 1 -->
           <div
-            class="bg-gray-800/30 rounded-xl p-6 border border-gray-700/50 hover:border-purple-500/50 transition-all group">
+            class="bg-white/50 rounded-xl p-6 border-2 border-blue-500 hover:border-blue-300 transition-all group shadow-xl">
             <div class="flex items-start justify-between mb-3">
-              <h3 class="font-semibold text-lg group-hover:text-purple-300 transition-colors">
+              <h3 class="font-bold text-lg text-blue-600 transition-colors">
                 PHP 8.3 Sandbox
               </h3>
-              <i class="fas fa-external-link-alt text-gray-500 group-hover:text-purple-400 transition-colors"></i>
             </div>
-            <p class="text-gray-400 text-sm mb-4">
-              Docker-окружение для разработки на PHP 8.3 с полным стеком технологий
+            <p class="text-black text-sm mb-4">
+              Шаблон для разработки проектов на PHP 8.3 + composer внутри Docker-контейнера.
             </p>
-            <div class="flex flex-wrap gap-2 mb-3">
-              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 rounded text-xs">PHP</span>
-              <span class="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">Docker</span>
-              <span class="px-2 py-1 bg-purple-500/20 text-purple-300 rounded text-xs">PostgreSQL</span>
+            <div class="flex flex-wrap gap-2 mb-7">
+              <span class="px-2 py-1 bg-blue-600/80 text-blue-200 rounded text-xs">PHP</span>
+              <span class="px-2 py-1 bg-green-600/80 text-green-200 rounded text-xs">Docker</span>
+              <span class="px-2 py-1 bg-purple-600/80 text-purple-200 rounded text-xs">PostgreSQL</span>
             </div>
             <a href="https://github.com/kublahanov/php83-sandbox"
-               class="inline-flex items-center text-sm text-gray-400 hover:text-white transition-colors">
+               class="font-bold inline-flex items-center text-sm">
               <i class="fab fa-github mr-1"></i>
-              Посмотреть код
+              <span class="hover:underline">Код на GitHub</span>
+              <sup class="fas fa-external-link-alt ml-1"></sup>
             </a>
           </div>
 
@@ -179,8 +189,8 @@
       </div>
 
       <!-- Футер -->
-      <footer class="text-center mt-8 text-black/80 text-md border-t border-white/30 pt-8">
-        <p class="text-shadow-md/20 text-shadow-white">
+      <footer class="text-center mt-8 text-black/80 text-md border-t border-white/40 md:pt-8 pt-6">
+        <p class="md:text-base text-sm text-shadow-md/20 text-shadow-white">
           &copy; From
           <a class="underline hover:no-underline" href="https://github.com/kublahanov">kublahanov</a>
           with ❤️!
