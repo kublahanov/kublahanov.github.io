@@ -17,4 +17,36 @@ body {
   .btn-social {
     @apply flex items-center px-6 py-3 rounded-lg border transition-colors;
   }
+
+  .project-card {
+    @apply p-5 rounded-xl border-2 transition-all shadow-xl;
+  }
+
+  .card-wrapper {
+    @apply flex flex-col gap-3 h-full;
+  }
+
+  .card-header {
+    @apply font-bold text-lg transition-colors;
+  }
+
+  .card-description {
+    @apply text-black text-sm grow;
+  }
+
+  .card-tech {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .card-tech-badge {
+    @apply px-2 py-1 rounded text-xs;
+  }
+
+  .card-links {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .card-link {
+    @apply font-bold text-sm text-black/70;
+  }
 }
