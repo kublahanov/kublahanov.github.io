@@ -68,37 +68,63 @@
       <div class="border-t border-white/30 py-8">
         <h2 class="text-2xl text-shadow-sm mb-6 text-center md:text-left">
           <i class="fas fa-rocket mr-2 text-red-800"></i>
-          Проекты
+          Проекты <sup class="text-sm text-black/50">(действующие, и в разработке)</sup>
         </h2>
 
         <div class="grid md:grid-cols-2 gap-6">
-          <!-- Проект 1 -->
-          <div
-            class="bg-white/50 rounded-xl p-6 border-2 border-blue-500 hover:border-blue-300 transition-all group shadow-xl">
-            <div class="flex items-start justify-between mb-3">
-              <h3 class="font-bold text-lg text-blue-600 transition-colors">
-                PHP 8.3 Sandbox
+          <!-- Проект -->
+          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+            <div class="card-wrapper">
+              <h3 class="card-header text-blue-600">
+                PHP 8.3 Sandbox <sup class="text-sm text-blue-600/50">(релиз)</sup>
               </h3>
+              <p class="card-description">
+                Шаблон для разработки проектов на PHP 8.3 + composer внутри Docker-контейнера.
+              </p>
+              <div class="card-tech">
+                <span class="card-tech-badge bg-blue-600/80 text-blue-200">PHP</span>
+                <span class="card-tech-badge bg-green-600/80 text-green-200">Docker</span>
+                <span class="card-tech-badge bg-purple-600/80 text-purple-200">PostgreSQL</span>
+                <span class="card-tech-badge bg-yellow-600/80 text-yellow-200">Caddy</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/kublahanov/php83-sandbox" class="card-link">
+                  <i class="fab fa-github mr-1"></i>
+                  <span class="hover:underline">Код на GitHub</span>
+                </a>
+                <a href="https://kublahanov.github.io/php83-sandbox/" class="card-link">
+                  <i class="fas fa-globe mr-1"></i>
+                  <span class="hover:underline">Сайт</span>
+                </a>
+              </div>
             </div>
-            <p class="text-black text-sm mb-4">
-              Шаблон для разработки проектов на PHP 8.3 + composer внутри Docker-контейнера.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-7">
-              <span class="px-2 py-1 bg-blue-600/80 text-blue-200 rounded text-xs">PHP</span>
-              <span class="px-2 py-1 bg-green-600/80 text-green-200 rounded text-xs">Docker</span>
-              <span class="px-2 py-1 bg-purple-600/80 text-purple-200 rounded text-xs">PostgreSQL</span>
-            </div>
-            <a href="https://github.com/kublahanov/php83-sandbox"
-               class="font-bold inline-flex items-center text-sm">
-              <i class="fab fa-github mr-1"></i>
-              <span class="hover:underline">Код на GitHub</span>
-              <sup class="fas fa-external-link-alt ml-1"></sup>
-            </a>
           </div>
 
-          <!-- Проект 2 -->
+          <!-- Проект -->
+          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+            <div class="card-wrapper">
+              <h3 class="card-header text-blue-600">
+                jat-server-l12_ap <sup class="text-sm text-blue-600/50">(в разработке)</sup>
+              </h3>
+              <p class="card-description">
+                Шаблон REST API на базе Laravel 12 + API Platform с предустановленной аутентификацией пользователя
+                на основе JWT.
+              </p>
+              <div class="card-tech">
+                <span class="card-tech-badge bg-blue-600/80 text-blue-200">PHP</span>
+                <span class="card-tech-badge bg-purple-600/80 text-purple-200">PostgreSQL</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/kublahanov/jat-server-l12_ap" class="card-link">
+                  <i class="fab fa-github mr-1"></i>
+                  <span class="hover:underline">Код на GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div
-            class="bg-gray-800/30 rounded-xl p-6 border border-gray-700/50 hover:border-blue-500/50 transition-all group">
+            class="card-project group bg-gray-800/30 border-gray-700/50 hover:border-blue-500/50">
             <div class="flex items-start justify-between mb-3">
               <h3 class="font-semibold text-lg group-hover:text-blue-300 transition-colors">
                 Laravel API Template
@@ -120,9 +146,8 @@
             </a>
           </div>
 
-          <!-- Проект 3 -->
           <div
-            class="bg-gray-800/30 rounded-xl p-6 border border-gray-700/50 hover:border-green-500/50 transition-all group">
+            class="card-project group bg-gray-800/30 border-gray-700/50 hover:border-green-500/50">
             <div class="flex items-start justify-between mb-3">
               <h3 class="font-semibold text-lg group-hover:text-green-300 transition-colors">
                 React Dashboard
@@ -144,9 +169,8 @@
             </a>
           </div>
 
-          <!-- Проект 4 -->
           <div
-            class="bg-gray-800/30 rounded-xl p-6 border border-gray-700/50 hover:border-yellow-500/50 transition-all group">
+            class="card-project group bg-gray-800/30 border-gray-700/50 hover:border-yellow-500/50">
             <div class="flex items-start justify-between mb-3">
               <h3 class="font-semibold text-lg group-hover:text-yellow-300 transition-colors">
                 Vue.js E-commerce
