@@ -67,7 +67,7 @@
       <!-- Проекты -->
       <div class="border-t border-white/30 py-8">
         <h2 class="text-2xl text-shadow-sm mb-6 text-center md:text-left">
-          <i class="fas fa-rocket mr-2 text-red-600 text-shadow-lg"></i>
+          <i class="fas fa-robot mr-2 text-sky-700 text-shadow-lg"></i>
           Проекты <sup class="text-sm text-black/50">(действующие, и в разработке)</sup>
         </h2>
 
@@ -82,10 +82,11 @@
                 Шаблон для разработки проектов на PHP 8.3 + composer внутри Docker-контейнера.
               </p>
               <div class="card-tech">
-                <span class="card-tech-badge bg-blue-600/80 text-blue-200">PHP</span>
-                <span class="card-tech-badge bg-green-600/80 text-green-200">Docker</span>
-                <span class="card-tech-badge bg-purple-600/80 text-purple-200">PostgreSQL</span>
-                <span class="card-tech-badge bg-yellow-600/80 text-yellow-200">Caddy</span>
+                <span class="card-tech-badge-php">PHP</span>
+                <span class="card-tech-badge-docker">Docker</span>
+                <span class="card-tech-badge-postgre-sql">PostgreSQL</span>
+                <span class="card-tech-badge-caddy">Caddy</span>
+                <span class="card-tech-badge-tailwind">Tailwind</span>
               </div>
               <div class="card-links">
                 <a href="https://github.com/kublahanov/php83-sandbox" class="card-link">
@@ -111,8 +112,10 @@
                 на основе JWT.
               </p>
               <div class="card-tech">
-                <span class="card-tech-badge bg-blue-600/80 text-blue-200">PHP</span>
-                <span class="card-tech-badge bg-purple-600/80 text-purple-200">PostgreSQL</span>
+                <span class="card-tech-badge-php">PHP</span>
+                <span class="card-tech-badge-laravel">Laravel</span>
+                <span class="card-tech-badge-api-platform">API Platform</span>
+                <span class="card-tech-badge-postgre-sql">PostgreSQL</span>
               </div>
               <div class="card-links">
                 <a href="https://github.com/kublahanov/jat-server-l12_ap" class="card-link">
@@ -123,73 +126,76 @@
             </div>
           </div>
 
-          <div
-            class="card-project group bg-gray-800/30 border-gray-700/50 hover:border-blue-500/50">
-            <div class="flex items-start justify-between mb-3">
-              <h3 class="font-semibold text-lg group-hover:text-blue-300 transition-colors">
-                Laravel API Template
+          <!-- Проект -->
+          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+            <div class="card-wrapper">
+              <h3 class="card-header text-blue-600">
+                jat-client-vue-3 <sup class="text-sm text-blue-600/50">(в разработке)</sup>
               </h3>
-              <i class="fas fa-external-link-alt text-gray-500 group-hover:text-blue-400 transition-colors"></i>
+              <p class="card-description">
+                Шаблон клиента на Vue.js с предустановленной аутентификацией пользователя на основе JWT.
+              </p>
+              <div class="card-tech">
+                <span class="card-tech-badge-vue-js">Vue.js</span>
+                <span class="card-tech-badge-bootstrap">Bootstrap</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/kublahanov/jat-client-vue-3" class="card-link">
+                  <i class="fab fa-github mr-1"></i>
+                  <span class="hover:underline">Код на GitHub</span>
+                </a>
+              </div>
             </div>
-            <p class="text-gray-400 text-sm mb-4">
-              Готовый шаблон для создания REST API на Laravel с JWT аутентификацией
-            </p>
-            <div class="flex flex-wrap gap-2 mb-3">
-              <span class="px-2 py-1 bg-red-500/20 text-red-300 rounded text-xs">Laravel</span>
-              <span class="px-2 py-1 bg-yellow-500/20 text-yellow-300 rounded text-xs">JavaScript</span>
-              <span class="px-2 py-1 bg-gray-500/20 text-gray-300 rounded text-xs">API</span>
-            </div>
-            <a href="https://github.com/kublahanov"
-               class="inline-flex items-center text-sm text-gray-400 hover:text-white transition-colors">
-              <i class="fab fa-github mr-1"></i>
-              Посмотреть код
-            </a>
           </div>
 
-          <div
-            class="card-project group bg-gray-800/30 border-gray-700/50 hover:border-green-500/50">
-            <div class="flex items-start justify-between mb-3">
-              <h3 class="font-semibold text-lg group-hover:text-green-300 transition-colors">
-                React Dashboard
+          <!-- Проект -->
+          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+            <div class="card-wrapper">
+              <h3 class="card-header text-blue-600">
+                jat-server-l10 <sup class="text-sm text-blue-600/50">(в архиве)</sup>
               </h3>
-              <i class="fas fa-external-link-alt text-gray-500 group-hover:text-green-400 transition-colors"></i>
+              <p class="card-description">
+                Шаблон REST API на базе Laravel 10 с предустановленной аутентификацией пользователя на основе JWT.
+              </p>
+              <div class="card-tech">
+                <span class="card-tech-badge-php">PHP</span>
+                <span class="card-tech-badge-laravel">Laravel</span>
+                <span class="card-tech-badge-postgre-sql">PostgreSQL</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/kublahanov/jat-server-l10" class="card-link">
+                  <i class="fab fa-github mr-1"></i>
+                  <span class="hover:underline">Код на GitHub</span>
+                </a>
+              </div>
             </div>
-            <p class="text-gray-400 text-sm mb-4">
-              Админ-панель на React с графиками и управлением данными
-            </p>
-            <div class="flex flex-wrap gap-2 mb-3">
-              <span class="px-2 py-1 bg-cyan-500/20 text-cyan-300 rounded text-xs">React</span>
-              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 rounded text-xs">TypeScript</span>
-              <span class="px-2 py-1 bg-orange-500/20 text-orange-300 rounded text-xs">Tailwind</span>
-            </div>
-            <a href="https://github.com/kublahanov"
-               class="inline-flex items-center text-sm text-gray-400 hover:text-white transition-colors">
-              <i class="fab fa-github mr-1"></i>
-              Посмотреть код
-            </a>
           </div>
 
-          <div
-            class="card-project group bg-gray-800/30 border-gray-700/50 hover:border-yellow-500/50">
-            <div class="flex items-start justify-between mb-3">
-              <h3 class="font-semibold text-lg group-hover:text-yellow-300 transition-colors">
-                Vue.js E-commerce
+          <!-- Проект -->
+          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+            <div class="card-wrapper">
+              <h3 class="card-header text-blue-600">
+                tops-and-roots-client <sup class="text-sm text-blue-600/50">(в разработке)</sup>
               </h3>
-              <i class="fas fa-external-link-alt text-gray-500 group-hover:text-yellow-400 transition-colors"></i>
+              <p class="card-description">
+                Приложение для ведения списка прочитанных книг, систематизации и учета связей между авторами, жанрами
+                и так далее.
+              </p>
+              <div class="card-tech">
+                <span class="card-tech-badge-vue-js">Vue.js</span>
+                <span class="card-tech-badge-quasar">Quasar</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/kublahanov/tops-and-roots-client" class="card-link">
+                  <i class="fab fa-github mr-1"></i>
+                  <span class="hover:underline">Код на GitHub</span>
+                </a>
+                <a href="https://kublahanov.github.io/tops-and-roots-client/" class="card-link">
+                  <i class="fas fa-globe mr-1"></i>
+                  <span class="hover:underline">Сайт</span>
+                </a>
+              </div>
             </div>
-            <p class="text-gray-400 text-sm mb-4">
-              Интернет-магазин на Vue.js с корзиной и системой заказов
-            </p>
-            <div class="flex flex-wrap gap-2 mb-3">
-              <span class="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">Vue.js</span>
-              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 rounded text-xs">Vuex</span>
-              <span class="px-2 py-1 bg-red-500/20 text-red-300 rounded text-xs">Firebase</span>
-            </div>
-            <a href="https://github.com/kublahanov"
-               class="inline-flex items-center text-sm text-gray-400 hover:text-white transition-colors">
-              <i class="fab fa-github mr-1"></i>
-              Посмотреть код
-            </a>
           </div>
         </div>
       </div>
@@ -197,7 +203,7 @@
       <!-- Планы -->
       <div class="border-t border-white/30 py-8">
         <h2 class="text-2xl text-shadow-sm mb-6 text-center md:text-left">
-          <i class="fas fa-user-astronaut mr-2 text-green-600 text-shadow-lg"></i>
+          <i class="far fa-lightbulb mr-2 text-yellow-500 text-shadow-lg"></i>
           Планы
         </h2>
 
@@ -212,7 +218,7 @@
                 Шаблон для разработки проектов на PHP 8.3 + composer внутри Docker-контейнера.
               </p>
               <div class="card-tech">
-                <span class="card-tech-badge bg-blue-600/80 text-blue-200">PHP</span>
+                <span class="card-tech-badge bg-stone-500/80 text-stone-100">What?</span>
               </div>
             </div>
           </div>
@@ -222,8 +228,8 @@
       <!-- Проекты SilentSystems -->
       <div class="border-t border-white/30 py-8">
         <h2 class="text-2xl text-shadow-sm mb-6 text-center md:text-left">
-          <i class="fas fa-briefcase mr-2 text-purple-600 text-shadow-lg"></i>
-          Проекты SilentSystems
+          <i class="fas fa-briefcase mr-2 text-amber-950 text-shadow-lg"></i>
+          Проекты <span class="font-bold text-black/50">SilentSystems</span>
         </h2>
 
         <div class="grid md:grid-cols-2 gap-6">
@@ -237,33 +243,52 @@
                 Шаблон для разработки проектов на PHP 8.3 + composer внутри Docker-контейнера.
               </p>
               <div class="card-tech">
-                <span class="card-tech-badge bg-blue-600/80 text-blue-200">PHP</span>
+                <span class="card-tech-badge-php">PHP</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Технологии -->
+      <!-- Сумма технологий -->
       <div class="border-t border-white/30 py-8">
         <h2 class="text-2xl text-shadow-sm mb-6 text-center md:text-left">
           <i class="fas fa-cogs mr-2 text-amber-800"></i>
-          Технологии
+          Сумма технологий
         </h2>
 
-        <div class="flex flex-wrap justify-center gap-3">
-          <span class="px-3 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30">PHP / Laravel</span>
-          <span class="px-3 py-2 bg-blue-500/20 text-blue-300 rounded-lg border border-blue-500/30">JavaScript / TypeScript</span>
-          <span class="px-3 py-2 bg-cyan-500/20 text-cyan-300 rounded-lg border border-cyan-500/30">Vue.js / React</span>
-          <span class="px-3 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">Node.js</span>
-          <span class="px-3 py-2 bg-red-500/20 text-red-300 rounded-lg border border-red-500/30">PostgreSQL / MySQL</span>
-          <span class="px-3 py-2 bg-orange-500/20 text-orange-300 rounded-lg border border-orange-500/30">Docker</span>
-          <span class="px-3 py-2 bg-gray-500/20 text-gray-300 rounded-lg border border-gray-500/30">Git</span>
+        <h3 class="my-3">Используется:</h3>
+
+        <div class="card-tech">
+          <span class="card-tech-badge-docker">Docker</span>
+          <span class="card-tech-badge-git">Git</span>
+          <span class="card-tech-badge-caddy">Caddy</span>
+          <span class="card-tech-badge-nginx">Nginx</span>
+          <span class="card-tech-badge-php">PHP</span>
+          <span class="card-tech-badge-laravel">Laravel</span>
+          <span class="card-tech-badge-api-platform">API Platform</span>
+          <span class="card-tech-badge-postgre-sql">PostgreSQL</span>
+          <span class="card-tech-badge-my-sql">MySQL</span>
+          <span class="card-tech-badge-javascript">JavaScript</span>
+          <span class="card-tech-badge-vue-js">Vue.js</span>
+          <span class="card-tech-badge-quasar">Quasar</span>
+          <span class="card-tech-badge-tailwind">Tailwind</span>
+          <span class="card-tech-badge-bootstrap">Bootstrap</span>
+        </div>
+
+        <h3 class="my-3">Планируется:</h3>
+
+        <div class="card-tech">
+          <span class="card-tech-badge-typescript">TypeScript</span>
+          <span class="card-tech-badge-symfony">Symfony</span>
+          <span class="card-tech-badge-golang">Golang</span>
+          <span class="card-tech-badge-node-js">Node.js</span>
+          <span class="card-tech-badge-react">React</span>
         </div>
       </div>
 
       <!-- Футер -->
-      <footer class="text-center mt-8 text-black/80 text-md border-t border-white/40 md:pt-8 pt-6">
+      <footer class="text-center mt-8 text-black text-md border-t border-white/40 md:pt-8 pt-6">
         <p class="md:text-base text-sm text-shadow-md/20 text-shadow-white">
           &copy; From
           <a class="underline hover:no-underline" href="https://github.com/kublahanov">kublahanov</a>
