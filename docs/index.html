@@ -67,7 +67,7 @@
       <!-- Проекты -->
       <div class="border-t border-white/30 py-8">
         <h2 class="text-2xl text-shadow-sm mb-6 text-center md:text-left">
-          <i class="fas fa-robot mr-2 text-sky-700 text-shadow-lg"></i>
+          <i class="fas fa-robot mr-2 text-sky-600 text-shadow-lg"></i>
           Проекты <sup class="text-sm text-black/50">(действующие, и в разработке)</sup>
         </h2>
 
@@ -78,9 +78,9 @@
               <h3 class="card-header text-blue-600">
                 PHP 8.3 Sandbox <sup class="text-sm text-blue-600/50">(релиз)</sup>
               </h3>
-              <p class="card-description">
+              <div class="card-description">
                 Шаблон для разработки проектов на PHP 8.3 + composer внутри Docker-контейнера.
-              </p>
+              </div>
               <div class="card-tech">
                 <span class="card-tech-badge-php">PHP</span>
                 <span class="card-tech-badge-docker">Docker</span>
@@ -107,10 +107,10 @@
               <h3 class="card-header text-blue-600">
                 jat-server-l12_ap <sup class="text-sm text-blue-600/50">(в разработке)</sup>
               </h3>
-              <p class="card-description">
+              <div class="card-description">
                 Шаблон REST API на базе Laravel 12 + API Platform с предустановленной аутентификацией пользователя
                 на основе JWT.
-              </p>
+              </div>
               <div class="card-tech">
                 <span class="card-tech-badge-php">PHP</span>
                 <span class="card-tech-badge-laravel">Laravel</span>
@@ -132,9 +132,9 @@
               <h3 class="card-header text-blue-600">
                 jat-client-vue-3 <sup class="text-sm text-blue-600/50">(в разработке)</sup>
               </h3>
-              <p class="card-description">
+              <div class="card-description">
                 Шаблон клиента на Vue.js с предустановленной аутентификацией пользователя на основе JWT.
-              </p>
+              </div>
               <div class="card-tech">
                 <span class="card-tech-badge-vue-js">Vue.js</span>
                 <span class="card-tech-badge-bootstrap">Bootstrap</span>
@@ -154,9 +154,9 @@
               <h3 class="card-header text-blue-600">
                 jat-server-l10 <sup class="text-sm text-blue-600/50">(в архиве)</sup>
               </h3>
-              <p class="card-description">
+              <div class="card-description">
                 Шаблон REST API на базе Laravel 10 с предустановленной аутентификацией пользователя на основе JWT.
-              </p>
+              </div>
               <div class="card-tech">
                 <span class="card-tech-badge-php">PHP</span>
                 <span class="card-tech-badge-laravel">Laravel</span>
@@ -177,10 +177,10 @@
               <h3 class="card-header text-blue-600">
                 tops-and-roots-client <sup class="text-sm text-blue-600/50">(в разработке)</sup>
               </h3>
-              <p class="card-description">
+              <div class="card-description">
                 Приложение для ведения списка прочитанных книг, систематизации и учета связей между авторами, жанрами
                 и так далее.
-              </p>
+              </div>
               <div class="card-tech">
                 <span class="card-tech-badge-vue-js">Vue.js</span>
                 <span class="card-tech-badge-quasar">Quasar</span>
@@ -212,13 +212,58 @@
           <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
             <div class="card-wrapper">
               <h3 class="card-header text-blue-600">
-                Что-то новенькое...
+                Список книг из проекта "Вершки и корешки"
               </h3>
-              <p class="card-description">
-                Шаблон для разработки проектов на PHP 8.3 + composer внутри Docker-контейнера.
-              </p>
+              <div class="card-description">
+                Мой личный список книг в текстовом формате. Предполагается выводить его в разделе "Библиотека"
+                сайта "Вершки и корешки".
+              </div>
               <div class="card-tech">
-                <span class="card-tech-badge bg-stone-500/80 text-stone-100">What?</span>
+                <span class="card-tech-badge bg-stone-500/80 text-stone-100">TXT</span>
+              </div>
+              <div class="card-links">
+                <a href="https://kublahanov.github.io/tops-and-roots-client/texts/read_001.txt" class="card-link">
+                  <i class="fas fa-globe mr-1"></i>
+                  <span class="hover:underline">Ссылка на список</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Проект -->
+          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+            <div class="card-wrapper">
+              <h3 class="card-header text-blue-600">
+                Проект "Белый шум" <sup class="text-sm text-blue-600/50">(название в разработке)</sup>
+              </h3>
+              <div class="card-description">
+                Альтернатива проекта <a href="https://www.noisli.com/" target="_blank" rel="nofollow">"Noisli"</a>,
+                адаптированная под мои собственные требования. В дальнейшем - если проект будет реализован - под
+                требования пользующейся им аудитории.
+              </div>
+              <div class="card-tech">
+                <span class="card-tech-badge bg-stone-500/80 text-stone-100">Was?</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Проект -->
+          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+            <div class="card-wrapper">
+              <h3 class="card-header text-blue-600">
+                Проект "Классика" <sup class="text-sm text-blue-600/50">(название в разработке)</sup>
+              </h3>
+              <div class="card-description">
+                <p>
+                  Сайт о наиболее известных композиторах прошлого и современности с фотографиями, биографиями,
+                  и музыкальным содержимым.
+                </p>
+                <blockquote class="pt-2 pb-2 px-3 mb-1 mt-2 bg-stone-200 border rounded-xl border-gray-300">
+                  "Это классика! Это знать надо!" &copy;
+                </blockquote>
+              </div>
+              <div class="card-tech">
+                <span class="card-tech-badge bg-stone-500/80 text-stone-100">Was?</span>
               </div>
             </div>
           </div>
@@ -237,13 +282,25 @@
           <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
             <div class="card-wrapper">
               <h3 class="card-header text-blue-600">
-                Что-то новенькое...
+                Профессор Алексеев - Персональный сайт
               </h3>
-              <p class="card-description">
-                Шаблон для разработки проектов на PHP 8.3 + composer внутри Docker-контейнера.
-              </p>
+              <div class="card-description">
+                Профессор Алексеев Александр Алексеевич. Соединительнотканная теория медицины и биологии.
+              </div>
               <div class="card-tech">
-                <span class="card-tech-badge-php">PHP</span>
+                <span class="card-tech-badge-javascript">JavaScript</span>
+                <span class="card-tech-badge-css">CSS / SCSS</span>
+                <span class="card-tech-badge-html">HTML</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/SilentSystems/professor-alexeev" class="card-link">
+                  <i class="fab fa-github mr-1"></i>
+                  <span class="hover:underline">Код на GitHub</span>
+                </a>
+                <a href="https://professor-alexeev.ru/" class="card-link">
+                  <i class="fas fa-globe mr-1"></i>
+                  <span class="hover:underline">Сайт</span>
+                </a>
               </div>
             </div>
           </div>
@@ -253,7 +310,7 @@
       <!-- Сумма технологий -->
       <div class="border-t border-white/30 py-8">
         <h2 class="text-2xl text-shadow-sm mb-6 text-center md:text-left">
-          <i class="fas fa-cogs mr-2 text-amber-800"></i>
+          <i class="fas fa-cogs mr-2 text-fuchsia-600"></i>
           Сумма технологий
         </h2>
 
@@ -274,6 +331,8 @@
           <span class="card-tech-badge-quasar">Quasar</span>
           <span class="card-tech-badge-tailwind">Tailwind</span>
           <span class="card-tech-badge-bootstrap">Bootstrap</span>
+          <span class="card-tech-badge-css">CSS / SCSS</span>
+          <span class="card-tech-badge-html">HTML</span>
         </div>
 
         <h3 class="my-3">Планируется:</h3>

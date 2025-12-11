@@ -51,11 +51,13 @@ body {
   .card-tech-badge-api-platform { @apply px-2 py-1 rounded text-xs bg-sky-600/80 text-sky-100; }
   .card-tech-badge-postgre-sql { @apply px-2 py-1 rounded text-xs bg-purple-600/80 text-purple-100; }
   .card-tech-badge-my-sql { @apply px-2 py-1 rounded text-xs bg-purple-500/80 text-purple-50; }
-  .card-tech-badge-javascript { @apply px-2 py-1 rounded text-xs bg-amber-500/80 text-amber-50; }
+  .card-tech-badge-javascript { @apply px-2 py-1 rounded text-xs bg-amber-500/80 text-white font-bold; }
   .card-tech-badge-vue-js { @apply px-2 py-1 rounded text-xs bg-cyan-600/80 text-cyan-100; }
   .card-tech-badge-quasar { @apply px-2 py-1 rounded text-xs bg-violet-800/80 text-violet-100; }
   .card-tech-badge-tailwind { @apply px-2 py-1 rounded text-xs bg-pink-600/80 text-pink-50; }
   .card-tech-badge-bootstrap { @apply px-2 py-1 rounded text-xs bg-fuchsia-600/80 text-fuchsia-50; }
+  .card-tech-badge-css { @apply px-2 py-1 rounded text-xs bg-white text-gray-800 font-bold; }
+  .card-tech-badge-html { @apply px-2 py-1 rounded text-xs bg-yellow-200 text-gray-800 font-bold; }
 
   .card-tech-badge-typescript { @apply px-2 py-1 rounded text-xs bg-black/80 text-gray-100; }
   .card-tech-badge-symfony { @apply px-2 py-1 rounded text-xs bg-emerald-600/80 text-blue-100; }
