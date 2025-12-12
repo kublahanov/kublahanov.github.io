@@ -6,15 +6,34 @@
   <title>@kublahanov - О себе и своих разработках</title>
   <link href="assets/css/output.css" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+  <!-- Для браузеров без WebP -->
+  <!--<link rel="preload" as="image"-->
+  <!--      href="assets/images/background-mobile.jpg"-->
+  <!--      media="(max-width: 768px)">-->
+  <!--<link rel="preload" as="image"-->
+  <!--      href="assets/images/background.jpg"-->
+  <!--      media="(min-width: 769px)">-->
+
+  <!-- Для браузеров с WebP -->
+  <link rel="preload" as="image"
+        href="assets/images/background-mobile.webp"
+        media="(max-width: 768px)">
+  <link rel="preload" as="image"
+        href="assets/images/background.webp"
+        media="(min-width: 769px)">
 </head>
 <body class="min-h-screen overflow-x-hidden font-sans">
+<!-- Белый overlay -->
+<div class="bg-overlay"></div>
+
 <!-- Основной контент -->
 <div class="relative z-10 min-h-screen flex items-center justify-center px-4 py-8">
   <div class="max-w-4xl w-full">
     <!-- Карточка профиля -->
     <div class="
       bg-white/30
-        bg-gradient-to-b from-white/5 via-white/30 to-white/80
+        bg-gradient-to-b from-white/5 via-white/50 to-white/90
         backdrop-blur-sm
         px-8 pt-8 pb-6
         md:p-12 md:pt-12 md:pb-10
@@ -57,26 +76,26 @@
           <i class="fas fa-file-alt mr-2"></i>
           Резюме
         </a>
-        <a href="mailto:your-email@example.com" target="_blank"
-          class="btn-social bg-cyan-700/50 hover:bg-cyan-700/40 text-cyan-100 border-cyan-700 hover:border-white">
-          <i class="fas fa-envelope mr-2"></i>
-          Email
-        </a>
+        <!--<a href="mailto:4progs@inbox.ru" target="_blank"-->
+        <!--  class="btn-social bg-cyan-700/50 hover:bg-cyan-700/40 text-cyan-100 border-cyan-700 hover:border-white">-->
+        <!--  <i class="fas fa-envelope mr-2"></i>-->
+        <!--  Email-->
+        <!--</a>-->
       </div>
 
       <!-- Проекты -->
       <div class="border-t border-white/30 py-8">
-        <h2 class="text-2xl text-shadow-sm mb-6 text-center md:text-left">
+        <h2 class="header-h2">
           <i class="fas fa-robot mr-2 text-sky-600 text-shadow-lg"></i>
           Проекты <sup class="text-sm text-black/50">(действующие, и в разработке)</sup>
         </h2>
 
         <div class="grid md:grid-cols-2 gap-6">
           <!-- Проект -->
-          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+          <div class="project-card group">
             <div class="card-wrapper">
-              <h3 class="card-header text-blue-600">
-                PHP 8.3 Sandbox <sup class="text-sm text-blue-600/50">(релиз)</sup>
+              <h3 class="card-header">
+                PHP 8.3 Sandbox <sup class="card-header-sup">(релиз)</sup>
               </h3>
               <div class="card-description">
                 Шаблон для разработки проектов на PHP 8.3 + composer внутри Docker-контейнера.
@@ -102,10 +121,10 @@
           </div>
 
           <!-- Проект -->
-          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+          <div class="project-card group">
             <div class="card-wrapper">
-              <h3 class="card-header text-blue-600">
-                jat-server-l12_ap <sup class="text-sm text-blue-600/50">(в разработке)</sup>
+              <h3 class="card-header">
+                jat-server-l12_ap <sup class="card-header-sup">(в разработке)</sup>
               </h3>
               <div class="card-description">
                 Шаблон REST API на базе Laravel 12 + API Platform с предустановленной аутентификацией пользователя
@@ -127,10 +146,10 @@
           </div>
 
           <!-- Проект -->
-          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+          <div class="project-card group">
             <div class="card-wrapper">
-              <h3 class="card-header text-blue-600">
-                jat-client-vue-3 <sup class="text-sm text-blue-600/50">(в разработке)</sup>
+              <h3 class="card-header">
+                jat-client-vue-3 <sup class="card-header-sup">(в разработке)</sup>
               </h3>
               <div class="card-description">
                 Шаблон клиента на Vue.js с предустановленной аутентификацией пользователя на основе JWT.
@@ -149,10 +168,10 @@
           </div>
 
           <!-- Проект -->
-          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+          <div class="project-card group">
             <div class="card-wrapper">
-              <h3 class="card-header text-blue-600">
-                jat-server-l10 <sup class="text-sm text-blue-600/50">(в архиве)</sup>
+              <h3 class="card-header">
+                jat-server-l10 <sup class="card-header-sup">(в архиве)</sup>
               </h3>
               <div class="card-description">
                 Шаблон REST API на базе Laravel 10 с предустановленной аутентификацией пользователя на основе JWT.
@@ -172,12 +191,13 @@
           </div>
 
           <!-- Проект -->
-          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+          <div class="project-card group">
             <div class="card-wrapper">
-              <h3 class="card-header text-blue-600">
-                tops-and-roots-client <sup class="text-sm text-blue-600/50">(в разработке)</sup>
+              <h3 class="card-header">
+                tops-and-roots-client <sup class="card-header-sup">(в разработке)</sup>
               </h3>
               <div class="card-description">
+                Заготовка сайта / приложения "Вершки и корешки".
                 Приложение для ведения списка прочитанных книг, систематизации и учета связей между авторами, жанрами
                 и так далее.
               </div>
@@ -202,16 +222,16 @@
 
       <!-- Планы -->
       <div class="border-t border-white/30 py-8">
-        <h2 class="text-2xl text-shadow-sm mb-6 text-center md:text-left">
+        <h2 class="header-h2">
           <i class="far fa-lightbulb mr-2 text-yellow-500 text-shadow-lg"></i>
           Планы
         </h2>
 
         <div class="grid md:grid-cols-2 gap-6">
           <!-- Проект -->
-          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+          <div class="project-card group">
             <div class="card-wrapper">
-              <h3 class="card-header text-blue-600">
+              <h3 class="card-header">
                 Список книг из проекта "Вершки и корешки"
               </h3>
               <div class="card-description">
@@ -231,10 +251,10 @@
           </div>
 
           <!-- Проект -->
-          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+          <div class="project-card group">
             <div class="card-wrapper">
-              <h3 class="card-header text-blue-600">
-                Проект "Белый шум" <sup class="text-sm text-blue-600/50">(название в разработке)</sup>
+              <h3 class="card-header">
+                Проект "Белый шум" <sup class="card-header-sup">(название в разработке)</sup>
               </h3>
               <div class="card-description">
                 Альтернатива проекта <a href="https://www.noisli.com/" target="_blank" rel="nofollow">"Noisli"</a>,
@@ -248,10 +268,10 @@
           </div>
 
           <!-- Проект -->
-          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+          <div class="project-card group">
             <div class="card-wrapper">
-              <h3 class="card-header text-blue-600">
-                Проект "Классика" <sup class="text-sm text-blue-600/50">(название в разработке)</sup>
+              <h3 class="card-header">
+                Проект "Классика" <sup class="card-header-sup">(название в разработке)</sup>
               </h3>
               <div class="card-description">
                 <p>
@@ -272,16 +292,16 @@
 
       <!-- Проекты SilentSystems -->
       <div class="border-t border-white/30 py-8">
-        <h2 class="text-2xl text-shadow-sm mb-6 text-center md:text-left">
+        <h2 class="header-h2">
           <i class="fas fa-briefcase mr-2 text-amber-950 text-shadow-lg"></i>
           Проекты <span class="font-bold text-black/50">SilentSystems</span>
         </h2>
 
         <div class="grid md:grid-cols-2 gap-6">
           <!-- Проект -->
-          <div class="project-card group bg-white/5 hover:bg-white/30 border-blue-500 hover:border-blue-300">
+          <div class="project-card group">
             <div class="card-wrapper">
-              <h3 class="card-header text-blue-600">
+              <h3 class="card-header">
                 Профессор Алексеев - Персональный сайт
               </h3>
               <div class="card-description">
@@ -309,7 +329,7 @@
 
       <!-- Сумма технологий -->
       <div class="border-t border-white/30 py-8">
-        <h2 class="text-2xl text-shadow-sm mb-6 text-center md:text-left">
+        <h2 class="header-h2">
           <i class="fas fa-cogs mr-2 text-fuchsia-600"></i>
           Сумма технологий
         </h2>

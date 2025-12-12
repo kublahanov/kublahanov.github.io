@@ -2,7 +2,8 @@
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  background-image: url('./../images/background.jpg');
+  background-image: url('./../images/background-mobile.jpg');
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -10,16 +11,67 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  transition: background-position 1.5s ease-out;
+}
+
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: -1;
+  pointer-events: none; /* Чтобы клики проходили сквозь */
+  animation: fadeOutOverlay 2s ease-out forwards;
+  animation-delay: 0.5s; /* Начинаем через 0.5с после загрузки */
+  /* border: 2px dashed red; */
+}
+
+/* Для современных браузеров - WebP */
+@supports (background-image: url('data:image/webp')) {
+  body {
+    background-image: url('./../images/background-mobile.webp');
+  }
+}
+
+/* Для десктопов - большая картинка */
+@media (min-width: 769px) {
+  body {
+    background-image: url('./../images/background.jpg');
+  }
+
+  @supports (background-image: url('data:image/webp')) {
+    body {
+      background-image: url('./../images/background.webp');
+    }
+  }
+}
+
+/* Анимация исчезновения */
+@keyframes fadeOutOverlay {
+  0% {
+    opacity: 1;
+  }
+  /*80% {*/
+  /*  opacity: 0.2;*/
+  /*}*/
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 
 @layer components {
+  .header-h2 {
+    @apply text-2xl text-shadow-sm mb-6 text-center md:text-left;
+  }
+
   .btn-social {
     @apply flex items-center px-6 py-3 rounded-lg border transition-colors;
   }
 
   .project-card {
-    @apply p-5 rounded-xl border-2 transition-all shadow-xl;
+    @apply p-5 rounded-xl border-2 transition-all shadow-xl bg-white/5 hover:bg-white/40 border-blue-500 hover:border-blue-300;
   }
 
   .card-wrapper {
@@ -27,7 +79,11 @@ body {
   }
 
   .card-header {
-    @apply font-bold text-lg transition-colors;
+    @apply font-bold text-lg transition-colors text-blue-600;
+  }
+
+  .card-header-sup {
+    @apply text-sm text-blue-600/50;
   }
 
   .card-description {
