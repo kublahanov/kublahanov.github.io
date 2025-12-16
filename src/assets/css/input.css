@@ -2,42 +2,15 @@
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  /*background-image: url('./../images/background-mobile.jpg');*/
-  /*background-color: #ffffff;*/
-  background: linear-gradient(lightblue, cornflowerblue);
-  /*background: linear-gradient(lightblue, lavender);*/
-  /*background: linear-gradient(cornflowerblue, lavender);*/
-  /*background: linear-gradient(lightblue, plum);*/
-  /*background-repeat: no-repeat;*/
-  /*background-attachment: fixed;*/
-  /*background-position: 50% 50%;*/
-  /*-webkit-background-size: cover;*/
-  /*-moz-background-size: cover;*/
-  /*-o-background-size: cover;*/
-  /*background-size: cover;*/
+  background: linear-gradient(30deg, cornflowerblue, antiquewhite, lightblue);
 }
-
-/*.bg-overlay {*/
-/*  display: none;*/
-/*  position: fixed;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  width: 100%;*/
-/*  height: 100%;*/
-/*  background-color: #ffffff;*/
-/*  z-index: -1;*/
-/*  pointer-events: none; !* Чтобы клики проходили сквозь *!*/
-/*  animation: fadeOutOverlay 2s ease-out forwards;*/
-/*  animation-delay: 0.5s; !* Начинаем через 0.5с после загрузки *!*/
-/*  !* border: 2px dashed red; *!*/
-/*}*/
 
 /* Для современных браузеров - WebP */
-@supports (background-image: url('data:image/webp')) {
-  body {
-    /*background-image: url('./../images/background-mobile.webp');*/
-  }
-}
+/*@supports (background-image: url('data:image/webp')) {*/
+/*  body {*/
+/*    background-image: url('./../images/background-mobile.webp');*/
+/*  }*/
+/*}*/
 
 /* Для десктопов - большая картинка */
 @media (min-width: 769px) {
@@ -51,10 +24,6 @@ body {
     -o-background-size: cover;
     background-size: cover;
   }
-
-  /*.bg-overlay {*/
-  /*  display: block;*/
-  /*}*/
 
   @supports (background-image: url('data:image/webp')) {
     body {
@@ -75,9 +44,6 @@ body {
   0% {
     opacity: 1;
   }
-  /*80% {*/
-  /*  opacity: 0.2;*/
-  /*}*/
   100% {
     opacity: 0;
     display: none;
